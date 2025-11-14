@@ -8,8 +8,8 @@ import { Repository } from 'typeorm';
 @Injectable()
 export class BrandsService {
   constructor(
-    @InjectRepository(Brand) private readonly brandRepository: Repository<Brand>,
-  ) { }
+   @InjectRepository(Brand)private readonly brandRepository:Repository<Brand>,
+  ) { console.log('BrandsService cargado...')}
 
   // Crear marca
   async create(createBrandDto: CreateBrandDto) {
