@@ -8,6 +8,12 @@ import { BrandsModule } from './brands/brands.module';
 import { PromotionsModule } from './promotions/promotions.module';
 import { CategoriesModule } from './categories/categories.module';
 import { SubcategoriesModule } from './subcategories/subcategories.module';
+import { UsersModule } from './users/users.module';
+import { ProductsModule } from './products/products.module';
+import { ProductVariantsModule } from './product_variants/product_variants.module';
+import { InventoryModule } from './inventory/inventory.module';
+import { AddressesModule } from './addresses/addresses.module';
+import { UserProfilesModule } from './user_profiles/user_profiles.module';
 
 @Module({
   imports: [
@@ -28,7 +34,13 @@ import { SubcategoriesModule } from './subcategories/subcategories.module';
     BrandsModule, 
     PromotionsModule,
     CategoriesModule,
-    SubcategoriesModule
+    SubcategoriesModule,
+    UsersModule,
+    ProductsModule,
+    ProductVariantsModule,
+    InventoryModule,
+    AddressesModule,
+    UserProfilesModule
   ],
   controllers: [AppController],
   providers: [AppService],
